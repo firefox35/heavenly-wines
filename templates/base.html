@@ -25,7 +25,12 @@
   </head>
   <body>
     {% include 'includes/header.html' %}
-    <h1>Hello, this is my first page</h1>
+    <main>
+        <h1>Hello, this is my first page</h1>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
     {% include 'includes/footer.html' %}
   </body>
 </html>
