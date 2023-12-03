@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis:wght@400;500;600&family=Oswald:wght@400;500&display=swap");
+
+:root {
+    /* Fonts */
+    --main-font: "Oswald", serif;
+    --title: "Ephesis", serif;
+
+    /*Colours */
+    --background-color: #3b3535;
+    --blue: blue;
+    --black: black;
+    --off-white: #f6f6f6;
+    --white: white;
+    --orange: orange;
+
+    /* extra */
+    --border: 5px solid #00000030;
+    --smal-box-shadow: 1px -1px 7px 0 #00000061;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--blue);
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--off-white);
+    box-shadow: var(--smal-box-shadow);
+}
+
+a.nav-link {
+    color: var(--black);
+}
+
+img.logo {
+    width: 2.75rem;
+    height: 2rem;
+}
