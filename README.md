@@ -1,7 +1,6 @@
-
 # Heavenly Wines
 
-Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This helps educate the ordinary person to become experts over time in their knowledge of the wines of the world.  
+Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This helps educate the ordinary person to become experts over time in their knowledge of the wines of the world.
 
 # Features
 
@@ -38,4 +37,3 @@ Error
 # Deployment
 
 ## Credits
-
