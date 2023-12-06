@@ -15,6 +15,7 @@ Including another URLcon`f
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import authenticate, login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
