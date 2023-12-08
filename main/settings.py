@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -171,6 +172,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
