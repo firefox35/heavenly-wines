@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['heavenly-wines-blog.herokuapp.com','8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com/',
+                 '8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
