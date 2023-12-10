@@ -13,8 +13,7 @@ class Wine(models.Model):
     YEAR_CHOICES = []
     for r in range(1940, (datetime.datetime.now().year+1)):
         YEAR_CHOICES.append((r, r))
-
-    WINE_TYPE = (
+    TYPE_OF_WINE = (
         ('cabernet sauvignon', 'Cabernet Sauvignon'),
         ('pinot grigio', 'Pinot Grigio'),
         ('malbec', 'malbec'),
@@ -24,7 +23,7 @@ class Wine(models.Model):
         ('chardonnay', 'Chardonnay'),
     )
 
-    WINE_COLOUR = (
+    COLOUR = (
         ('red', 'Red'),
         ('white', 'White'),
         ('rose', 'Rose'),
@@ -53,9 +52,9 @@ class Wine(models.Model):
     year = models.IntegerField(
         _('year'), choices=YEAR_CHOICES, default=datetime.datetime.now().year)
     type_of_wine = models.CharField(
-        max_length=50, choices=WINE_TYPE, default='Cabernet Sauvignon')
+        max_length=50, choices=TYPE_OF_WINE, default='Cabernet Sauvignon')
     colour = models.CharField(
-        max_length=50, choices=WINE_COLOUR, default='Red')
+        max_length=50, choices=COLOUR, default='Red')
     country = models.CharField(
         max_length=50, choices=COUNTRY, default='France')
     description = RichTextField(max_length=10000, null=False, blank=False)
