@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'taste',
     'crispy_forms',
     'crispy_bootstrap5',
-
+    'ckeditor',
 ]
 
 SITE_ID = 1
@@ -72,7 +72,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
-    
+
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'

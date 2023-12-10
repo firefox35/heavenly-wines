@@ -19,6 +19,6 @@ from django.contrib.auth import authenticate, login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('wines.urls')),
     path('accounts/', include('allauth.urls')),
+    path('', include('wines.urls')),
 ]
