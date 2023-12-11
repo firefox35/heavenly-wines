@@ -27,7 +27,8 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False# 'DEVELOPMENT' in os.environ
+DEBUG = False
+# 'DEVELOPMENT' in os.environ
 
 
 ALLOWED_HOSTS = ['heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
@@ -45,25 +46,26 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
+    'crispy_forms',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'wines',
     'taste',
-    'crispy_forms',
     'crispy_bootstrap5',
-    'cloudinary',
-    'cloudinary_storage',
     'ckeditor',
-]
+] 
+
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL= '/'
+LOGOUT_REDIRECT_URL= '/'
 
-MIDDLEWARE = [
+MIDDLEWARE= [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -76,12 +78,12 @@ MIDDLEWARE = [
 
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS= 'bootstrap5'
+CRISPY_TEMPLATE_PACK= 'bootstrap5'
 
-ROOT_URLCONF = 'main.urls'
+ROOT_URLCONF= 'main.urls'
 
-TEMPLATES = [
+TEMPLATES= [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
@@ -104,7 +106,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'main.wsgi.application'
+WSGI_APPLICATION= 'main.wsgi.application'
 
 
 # Database
@@ -117,7 +119,7 @@ WSGI_APPLICATION = 'main.wsgi.application'
 #   }
 # }
 
-DATABASES = {
+DATABASES= {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
 }
 
@@ -125,7 +127,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+AUTH_PASSWORD_VALIDATORS= [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -144,43 +146,43 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE= 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE= 'UTC'
 
-USE_I18N = True
+USE_I18N= True
 
-USE_L10N = True
+USE_L10N= True
 
-USE_TZ = True
+USE_TZ= True
 
 # Account Setup
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_EMAIL_VERTIFCATION = 'none'
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+ACCOUNT_AUTHENTICATION_METHOD= 'username_email'
+ACCOUNT_EMAIL_REQUIRED= True
+ACCOUNT_USERNAME_REQUIRED= True
+ACCOUNT_EMAIL_VERTIFCATION= 'none'
+LOGIN_URL= '/accounts/login/'
+LOGIN_REDIRECT_URL= '/'
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL= '/static/'
+STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS= [os.path.join(BASE_DIR, 'static'),]
+STATICFILES_STORAGE= 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL= '/media/'
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
+DEFAULT_FILE_STORAGE= 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
+CLOUDINARY_URL= os.environ.get('CLOUDINARY_URL')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD= 'django.db.models.BigAutoField'
