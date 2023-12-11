@@ -62,10 +62,10 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL= '/'
-LOGOUT_REDIRECT_URL= '/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
-MIDDLEWARE= [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -78,12 +78,12 @@ MIDDLEWARE= [
 
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS= 'bootstrap5'
-CRISPY_TEMPLATE_PACK= 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
-ROOT_URLCONF= 'main.urls'
+ROOT_URLCONF = 'main.urls'
 
-TEMPLATES= [
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
@@ -106,7 +106,7 @@ TEMPLATES= [
     },
 ]
 
-WSGI_APPLICATION= 'main.wsgi.application'
+WSGI_APPLICATION = 'main.wsgi.application'
 
 
 # Database
@@ -119,7 +119,7 @@ WSGI_APPLICATION= 'main.wsgi.application'
 #   }
 # }
 
-DATABASES= {
+DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
 }
 
@@ -127,7 +127,7 @@ DATABASES= {
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS= [
+AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
