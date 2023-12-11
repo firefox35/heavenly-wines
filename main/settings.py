@@ -31,11 +31,11 @@ DEBUG = False
 # 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
+ALLOWED_HOSTS = ['heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com/',
                  '8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
 
 # Application definition
 
@@ -57,7 +57,7 @@ INSTALLED_APPS = [
     'taste',
     'crispy_bootstrap5',
     'ckeditor',
-] 
+]
 
 
 SITE_ID = 1
@@ -146,43 +146,43 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE= 'en-us'
+LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE= 'UTC'
+TIME_ZONE = 'UTC'
 
-USE_I18N= True
+USE_I18N = True
 
-USE_L10N= True
+USE_L10N = True
 
-USE_TZ= True
+USE_TZ = True
 
 # Account Setup
 
-ACCOUNT_AUTHENTICATION_METHOD= 'username_email'
-ACCOUNT_EMAIL_REQUIRED= True
-ACCOUNT_USERNAME_REQUIRED= True
-ACCOUNT_EMAIL_VERTIFCATION= 'none'
-LOGIN_URL= '/accounts/login/'
-LOGIN_REDIRECT_URL= '/'
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_EMAIL_VERTIFCATION = 'none'
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL= '/static/'
-STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS= [os.path.join(BASE_DIR, 'static'),]
-STATICFILES_STORAGE= 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 
-MEDIA_URL= '/media/'
-MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
-DEFAULT_FILE_STORAGE= 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CLOUDINARY_URL= os.environ.get('CLOUDINARY_URL')
+CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD= 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
