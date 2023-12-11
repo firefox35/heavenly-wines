@@ -27,10 +27,12 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False 
+DEBUG = True 
 #'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['127.0.0.1','heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
+
+
+ALLOWED_HOSTS = ['heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
                  '8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
