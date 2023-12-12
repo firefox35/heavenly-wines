@@ -50,11 +50,12 @@ LOGGING = {
 }
 
 
-ALLOWED_HOSTS = ['heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
+ALLOWED_HOSTS = ['https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com/',
                  '8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com', 'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com/']
+    'https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com/', 
+    'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com/']
 
 # Application definition
 
