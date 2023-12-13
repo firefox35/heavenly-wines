@@ -11,6 +11,8 @@ django-cloudinary-storage==0.3.0
 django-crispy-forms==2.1
 django-js-asset==2.1.0
 django-resized==1.0.2
+django-richtextfield==1.6.1
+form==0.0.1
 gunicorn==21.2.0
 index.py==0.21.16
 oauthlib==3.2.2

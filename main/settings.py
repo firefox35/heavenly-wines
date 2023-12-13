@@ -27,7 +27,7 @@ if os.path.exists('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # 'DEVELOPMENT' in os.environ
 
 LOGGING = {
@@ -50,10 +50,11 @@ LOGGING = {
 }
 
 
-ALLOWED_HOSTS = ['8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com','heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com']
+ALLOWED_HOSTS = ['8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com',
+                 'heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com',
-                        'heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com', ]
+CSRF_TRUSTED_ORIGINS = ['https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com',
+                        'https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com/', ]
 
 # Application definition
 
@@ -75,9 +76,24 @@ INSTALLED_APPS = [
     'taste',
     'crispy_bootstrap5',
     'ckeditor',
+    'djrichtextfield',
+    'form',
 ]
 
 SITE_ID = 1
+
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.ckeditor.com/4.14.0/standard/ckeditor.js'],
+    'init_template': 'djrichtextfield/init/ckeditor.js',
+    'settings': {
+        'toolbar': [
+            ['Format', 'Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList'], ['Undo', 'Redo'],
+            ['Maximize'],
+        ],
+        'format_tags': 'p;h1;h2;h3'
+    }
+}
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -191,7 +207,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
+CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
