@@ -87,3 +87,19 @@ img.logo {
     box-shadow: var(--smal-box-shadow);
     border-radius: 5px;
 }
+
+/* Wines */
+
+.card {
+    height: 90%;
+    margin-top: 1rem;
+}
+
+.wines {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.wines:hover {
+    cursor: pointer;
+}

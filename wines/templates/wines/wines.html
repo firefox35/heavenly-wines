@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} View Wine {% endblock %}
+
+{% block content %}
+<h1 class="text-center p-2">Newest Wines</h1>
+<div class="container d-flex flex-row flex-wrap justify-content-center">
+    {% for wine in wines %}
+    <a href="" class="wine" aria-label="Click to view {{ wine.title }}">
+        <div class="card m-3" style="width: 18rem;">
+            <img src="{{ wine.image.url }}" class="card-img-top" alt="{{ wine.image_alt }}">
+            <div class="card-body">
+                <h2 class="card-title">{{ wine.title }}</h2>
+                <p class="card-text">{{ wine.description|truncatechars:100 }}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}        
+</div>
+{% endblock %}

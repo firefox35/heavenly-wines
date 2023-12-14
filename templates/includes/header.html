@@ -28,20 +28,30 @@
         <ul class="navbar-nav me-auto me-2">
           <li class="nav-item">
             <a
-              class="nav-link" aria-current="page" aria-label="home" href="{% url 'home' %}">Home</a>
+              class="nav-link"
+              aria-current="page"
+              aria-label="home"
+              href="{% url 'home' %}"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a
+              class="nav-link {% if url_name == 'wines'%}active {% endif %}"
+              href="{% url 'wines'%}"> Wines </a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if url_name == 'add_wine'%}active
-              {% endif %}" href="{% url 'add_wine' %}">Wines</a>
+            <a
+              class="nav-link {% if url_name == 'add_wine'%}active {% endif %}"
+              href="{% url 'add_wine' %}"
+              >Comment</a
+            >
           </li>
           {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a
-              class="nav-link {% if url_name == 'accounts_logout' %}active
-              {% endif %}"
+              class="nav-link {% if url_name == 'accounts_logout' %}active {% endif %}"
               href="/accounts/logout/"
               >Logout</a
             >
@@ -49,8 +59,7 @@
           {% else %}
           <li class="nav-item">
             <a
-              class="nav-link {% if url_name == 'accounts_signup' %}active
-              {% endif %}"
+              class="nav-link {% if url_name == 'accounts_signup' %}active {% endif %}"
               href="/accounts/signup/"
               >Register</a
             >
