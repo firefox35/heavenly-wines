@@ -104,6 +104,7 @@ img.logo {
     cursor: pointer;
 }
 
-h1 .class {
-    text-align: center;
+.card-text {
+    width: 400;
+    height: 400;
 }

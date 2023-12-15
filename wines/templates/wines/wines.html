@@ -11,7 +11,7 @@
             <img src="{{ wine.image.url }}" class="card-img-top" alt="{{ wine.image_alt }}">
             <div class="card-body">
                 <h2 class="card-title">{{ wine.title }}</h2>
-                <p class="card-text">{{ wine.description|truncatechars:100 }}</p>
+                <span class="card-text">{{ wine.description|truncatechars:100|safe}}</span>
             </div>
         </div>
     </a>

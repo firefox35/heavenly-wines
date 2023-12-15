@@ -57,7 +57,7 @@ class Wine(models.Model):
         max_length=50, choices=COLOUR, default='Red')
     country = models.CharField(
         max_length=50, choices=COUNTRY, default='France')
-    description = RichTextField(max_length=10000, null=False, blank=False)
+    description = models.CharField(max_length=2000, null=False, blank=False)
     image = CloudinaryField('image', default='placeholder')
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     posted_on = models.DateTimeField(auto_now_add=True)
