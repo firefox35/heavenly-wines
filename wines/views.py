@@ -7,6 +7,7 @@ from .forms import WineForm
 class index(TemplateView):
     template_name = 'wines/index.html'
 
+
 class Wines(ListView):
     """ View all wines """
     template_name = 'wines/wines.html'
@@ -14,6 +15,7 @@ class Wines(ListView):
     context_object_name = 'wines'
     form_class = WineForm
     success_url = '/wines/'
+
 
 class AddWine(LoginRequiredMixin, CreateView):
     """ Add wine view """
