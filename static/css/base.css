@@ -103,3 +103,7 @@ img.logo {
 .wines:hover {
     cursor: pointer;
 }
+
+h1 .class {
+    text-align: center;
+}
