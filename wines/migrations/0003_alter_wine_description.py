@@ -4,15 +4,14 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('wines', '0002_alter_wine_year'),
+        ("wines", "0002_alter_wine_year"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='wine',
-            name='description',
+            model_name="wine",
+            name="description",
             field=models.CharField(max_length=500),
         ),
     ]

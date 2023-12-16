@@ -1,30 +1,41 @@
-from django.views.generic import TemplateView, CreateView, ListView
+from django.views.generic import TemplateView, CreateView, ListView, DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Wine
 from .forms import WineForm
 
 
 class index(TemplateView):
-    template_name = 'wines/index.html'
+    template_name = "wines/index.html"
 
 
 class Wines(ListView):
-    """ View all wines """
-    template_name = 'wines/wines.html'
+    """View all wines"""
+
+    template_name = "wines/wines.html"
     model = Wine
-    context_object_name = 'wines'
+    context_object_name = "wines"
     form_class = WineForm
-    success_url = '/wines/'
+    success_url = "/wines/"
+
+
+class WineDetail(DetailView):
+    """Add a wine view"""
+    template_name = "wines/wine_detail.html"
+    model = Wine
+    context_object_name = "wine"
 
 
 class AddWine(LoginRequiredMixin, CreateView):
-    """ Add wine view """
-    template_name = 'wines/add_wine.html'
+    """Add wine view"""
+    template_name = "wines/add_wine.html"
     model = Wine
-    context_object_name = 'wines'
+    context_object_name = "wines"
     form_class = WineForm
-    success_url = '/wines/'
+    success_url = "/wines/"
 
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddWine, self).form_valid(form)
+
+
+

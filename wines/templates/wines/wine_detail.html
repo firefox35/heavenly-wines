@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Wine Detail- {{recipe.title}} {% endblock %}
+
+{% block content %}
+        <div class="container">
+        <div class="wine-info mt-3 p-1">
+            <div class="wine-img">
+                <img src="{{wine.image.url }}" alt="{{ wine.image_alt }}" class="wine-pic">
+            </div>
+            <div class="wine-detail">
+                <h1 class="text-center">{{wine.title}}</h1>
+                <p class="text-center">Posted by {{wine.user}} on {{wine.posted_date}}</p>
+                <hr>
+                <p class="p-3"><strong>Year: </strong>{{wine.year}}</p>
+                <p class="p-3"><strong>Type: </strong>{{wine.type_of_wine|title}}</p>
+                <p class="p-3"><strong>Origin: </strong>{{wine.country|title}}</p>
+                <p class="p-3"><strong>Description: </strong>{{wine.description|safe}}</p>
+
+
+                {% if request.user == wine.user %}
+                <div class="text center">
+                    <a href="" class="btn btn-primary w-25">Edit</a>
+                    <a href="" class="btn btn-primary w-25">Delete</a>
+                </div>
+                {% endif %}
+            </div>
+          
+    </div>
+{% endblock %}

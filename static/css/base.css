@@ -104,7 +104,56 @@ img.logo {
     cursor: pointer;
 }
 
-.card-text {
-    width: 400px;
-    height: 400px;
+
+.wine-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wine-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description, .wine-detail {
+    width: 100%
+}
+
+.wine-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wine-pic{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 62.5em){
+    .wine-container {
+        flex-direction: row;
+    }
+
+    .wine-img {
+       width: 40%;
+       height: 20%;
+       margin: 0 auto ;
+    }
+
+    .wine-info {
+        flex-direction: row;
+        border: 1px solid var(--black);
+    }
+
+    .wine-detail {
+        width: 40%;
+        padding: 2rem;
+    }
+
+    .description{
+        width: 66.66%;
+        text-align: justify;
+    }
 }
