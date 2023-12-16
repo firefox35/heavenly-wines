@@ -1,5 +1,7 @@
 from django.views.generic import (
-    TemplateView, CreateView, ListView, DetailView, DeleteView)
+    TemplateView, CreateView,
+    ListView, DetailView,
+    DeleteView, UpdateView)
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Wine
@@ -45,4 +47,15 @@ class DeleteWine(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     success_url = '/wines/'
 
     def test_func(self):
-           return self.request.user == self.get_object().user  
+        return self.request.user == self.get_object().user
+
+
+class EditWine(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """Edit wine review"""
+    template_name = "wines/edit_wine.html"
+    model = Wine
+    form_class = WineForm
+    success_url = '/wines/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
