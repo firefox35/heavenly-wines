@@ -1,4 +1,6 @@
-from django.views.generic import TemplateView, CreateView, ListView, DetailView
+from django.views.generic import (
+    TemplateView, CreateView, ListView, DetailView, DeleteView)
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Wine
 from .forms import WineForm
@@ -10,7 +12,6 @@ class index(TemplateView):
 
 class Wines(ListView):
     """View all wines"""
-
     template_name = "wines/wines.html"
     model = Wine
     context_object_name = "wines"
@@ -26,7 +27,7 @@ class WineDetail(DetailView):
 
 
 class AddWine(LoginRequiredMixin, CreateView):
-    """Add wine view"""
+    """Add wine review"""
     template_name = "wines/add_wine.html"
     model = Wine
     context_object_name = "wines"
@@ -38,4 +39,10 @@ class AddWine(LoginRequiredMixin, CreateView):
         return super(AddWine, self).form_valid(form)
 
 
+class DeleteWine(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete wine review"""
+    model = Wine
+    success_url = '/wines/'
 
+    def test_func(self):
+           return self.request.user == self.get_object().user  
