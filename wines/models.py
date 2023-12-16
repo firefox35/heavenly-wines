@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils.translation import gettext as _
 from ckeditor.fields import RichTextField
+from django_resized import ResizedImageField
 import datetime
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -44,7 +45,8 @@ class Wine(models.Model):
     """
     A model to create and manage wines
     """
-    user = models.ForeignKey(User, related_name="wine_owner", on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, related_name="wine_owner", on_delete=models.CASCADE)
     title = models.CharField(max_length=300, null=False, blank=False)
     slug = models.SlugField(max_length=200, unique=True)
     year = models.IntegerField(
@@ -54,11 +56,13 @@ class Wine(models.Model):
         max_length=50, choices=TYPE_OF_WINE, default="Cabernet Sauvignon"
     )
     colour = models.CharField(max_length=50, choices=COLOUR, default="Red")
-    country = models.CharField(max_length=50, choices=COUNTRY, default="France")
+    country = models.CharField(
+        max_length=50, choices=COUNTRY, default="France")
     description = models.CharField(max_length=2000, null=False, blank=False)
-    image = CloudinaryField("image", default="placeholder")
+    image = ResizedImageField(
+        size=[400, None], quality=75, upload_to='wines/', force_format='WEBP', blank=True, null=True)
     image_alt = models.CharField(max_length=100, null=False, blank=False)
-    posted_on = models.DateTimeField(auto_now_add=True)
+    posted_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
