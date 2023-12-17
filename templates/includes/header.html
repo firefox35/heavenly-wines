@@ -74,9 +74,10 @@
           {% endif %}
         </ul>
         <!-- Search box in Header -->
-        <form class="d-flex" role="search">
+        <form class="d-flex" role="search" method="GET" action="{% url 'wines' %}">
           <input
             class="form-control me-2"
+            name="q"
             type="search"
             placeholder="Search"
             aria-label="Search"

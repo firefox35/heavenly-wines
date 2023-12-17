@@ -3,14 +3,14 @@
 {% block title %} Wine Detail- {{recipe.title}} {% endblock %}
 
 {% block content %}
-        <div class="container">
+    <div class="bg-image5 p-5 text-center shadow-1-strong rounded mb-5 text-red">
         <div class="wine-info mt-3 p-1">
             <div class="wine-img">
                 <img src="{{wine.image.url }}" alt="{{ wine.image_alt }}" class="wine-pic">
             </div>
             <div class="wine-detail">
                 <h1 class="text-center">{{wine.title}}</h1>
-                <p class="text-center">Posted by {{wine.user}} on {{wine.posted_date}}</p>
+                <p class="text-center">Posted by {{wine.user}} on {{wine.posted_on}}</p>
                 <hr>
                 <p class="p-3"><strong>Year: </strong>{{wine.year}}</p>
                 <p class="p-3"><strong>Type: </strong>{{wine.type_of_wine|title}}</p>

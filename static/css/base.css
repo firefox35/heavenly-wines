@@ -59,6 +59,51 @@ footer {
     margin: 1rem;
 }
 
+/**Background images**/
+.bg-image {
+    background: no-repeat center center fixed;
+    min-height: 100%;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.bg-image2 {
+    background: url("/static/images/avaline.jpg") no-repeat;
+    min-height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.bg-image3 {
+    background: url("/static/images/glasses.webp")no-repeat;
+    min-height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.bg-image4 {
+    background: url("/static/images/glasses.webp")no-repeat;
+    min-height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.bg-image5 {
+    background: url("/static/images/museum.jpg")no-repeat;
+    min-height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
 /* Header */
 .navbar {
     background-color: var(--off-white);
@@ -132,6 +177,13 @@ img.logo {
     height: auto;
 }
 
+
+.img-fluid {
+    max-width: 100vh;
+    height: 400px;
+    
+}
+
 @media screen and (min-width: 62.5em) {
     .wine-container {
         flex-direction: row;
@@ -156,4 +208,6 @@ img.logo {
         width: 66.66%;
         text-align: justify;
     }
+
+   
 }

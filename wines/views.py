@@ -4,12 +4,19 @@ from django.views.generic import (
     DeleteView, UpdateView)
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Q
 from .models import Wine
 from .forms import WineForm
 
 
 class index(TemplateView):
     template_name = "wines/index.html"
+
+
+class about(TemplateView):
+    template_name = "wines/about.html"
+    model = Wine
+    context_object_name = "wines"
 
 
 class Wines(ListView):
@@ -19,6 +26,17 @@ class Wines(ListView):
     context_object_name = "wines"
     form_class = WineForm
     success_url = "/wines/"
+
+    def get_queryset(self, **kwargs):
+        query = self.request.GET.get('q')
+        if query:
+            wines = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(description__icontains=query) 
+            )  
+        else:
+            wines = self.model.objects.all()
+        return wines
 
 
 class WineDetail(DetailView):

@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block title %}Add Wine{% endblock %} 
 
 {% block content %}
-<div class="container">
+<div class="bg-image2 p-5 text-center shadow-1-strong rounded mb-5 text-red">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
         <h1 class="text-center">Add Wine</h1>
         {% csrf_token %}
@@ -12,6 +12,6 @@
         <div class="text-center">
             <button type="submit" class="btn btn-primary mt-2">Add Wine</button>
         </div>
-    </form>
+    </form> 
 </div>
 {% endblock %}
