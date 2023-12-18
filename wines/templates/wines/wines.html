@@ -4,12 +4,13 @@
 
 {% block content %}
 <div class ="bg-image3">
-    <h1 class="text-center p-2">Newest Wines</h1>
+    <h1 class="text-center p-2 text-red">Wine Reviews</h1>
+    <p class="text-center p-2 text-white">Click on the Wine to view details</p>
     <div class="container d-flex flex-row flex-wrap justify-content-center">
         {% for wine in wines %}
         <a href="{% url 'wine_detail' wine.id %}" class="wine" aria-label="Click to view {{ wine.title }}">
             <div class="card m-3" style="width: 18rem;">
-                <img src="{{ wine.image.url }}" class="card-img-top" alt="{{ wine.image_alt }}">
+                <img src="{{ wine.image.url }}" class="card-img-top img-fluid" alt="{{ wine.image_alt }}">
                 <div class="card-body">
                     <h2 class="card-title">{{ wine.title }}</h2>
                     <span class="card-text">{{ wine.description|truncatechars:100|safe}}</span>

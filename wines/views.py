@@ -13,10 +13,13 @@ class index(TemplateView):
     template_name = "wines/index.html"
 
 
-class about(TemplateView):
+class about(ListView):
     template_name = "wines/about.html"
     model = Wine
     context_object_name = "wines"
+
+    def get_queryset(self):
+        return self.model.objects.all()[:3]
 
 
 class Wines(ListView):

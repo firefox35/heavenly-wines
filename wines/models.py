@@ -60,7 +60,8 @@ class Wine(models.Model):
         max_length=50, choices=COUNTRY, default="France")
     description = models.CharField(max_length=2000, null=False, blank=False)
     image = ResizedImageField(
-        size=[400, None], quality=75, upload_to='wines/', force_format='WEBP', blank=False, null=False)
+        size=[400, 400], quality=75, upload_to='wines/', force_format='WEBP',
+        blank=False, null=False)
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     posted_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)

@@ -1,6 +1,7 @@
 # Heavenly Wines
 
 Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This helps educate the ordinary person to become experts over time in their knowledge of the wines of the world.
+![Mockups](static/images/hw-devices.png)
 
 # Features
 
@@ -10,7 +11,7 @@ Header
 
 - Displays the Logo and the name of the brand to be promoted.
 
-  ![Heavenly Wines](static/images/wine.jpeg)
+  ![Heavenly Wines](static/images/hw-header.PNG)
 
 Navigation Menu
 
@@ -21,10 +22,8 @@ Footer
 
 - Displays the links to Facebook, Instagram, X and Youtube
 
-  ![Heavenly Wines-Facebook](static/icons/facebook-round-color-icon.svg)
-  ![Heavenly Wines-Instagram](static/icons/ig-instagram-icon.svg)
-  ![Heavenly Wines-X](static/icons/x-social-media-logo-icon.svg)
-  ![Heavenly Wines-Youtube](static/icons/youtube-color-icon.svg)
+  ![Heavenly Wines](static/images/hw-footer.PNG)
+  
 
 400 Error
 
@@ -55,29 +54,41 @@ Footer
 
   - The user is displayed with the game as per the game rules shown in the about screen.
 
-    ![Home Screen](static/images/)
+    ![Home Screen](static/images/hw-homepage.PNG)
 
 
 
 ## Home Page
-
+    ![Home Screen](static/images/hw-homepage.PNG)
+    
 ## About Page
-
+    ![About Screen](static/images/hw-wines-page.PNG)
+    
 ## Wines Page
+    ![Wines Screen](static/images/hw-wines-page.PNG)
 
-## Reviews Page
+## Comment Page
+    ![Wine Screen](static/images/hw-comment-page.PNG)
+    
+## Review Page
+    ![Wine Screen](static/images/hw-wines-page.PNG)
 
+    
 # Extra Features
 
 # Future Implementation
 
 # Design
 
-Wireframes - Unizard.io
+Wireframes - Balsamiq.com
 
 - Home Screen
 
-  ![About Screen](static/images/)
+  ![Home Screen](static/images/hw-homepage-mockups.PNG)
+
+- About Screen
+
+  ![Home Screen](static/images/hw-about-mockup.PNG)
 
 - Wines Screen
 
@@ -85,11 +96,11 @@ Wireframes - Unizard.io
 
   Comment Screen
 
-  ![Comment Screen](static/images/)
+  ![Comment Screen](static/images/hw-wine-reviews-mockup.PNG)
 
   Detail Screen
 
-  ![Detail Screen](static/images/)
+  ![Detail Screen](static/images/hw-detail-mockup.PNG)
 
   ![D Screen](static/images/)
 
@@ -130,7 +141,7 @@ Heroku
 
 ElephantSQL
 
-Uizard.io
+Balsamqi.com
 
 - This application was used to create mockups for the konnect website.
 - <https://app.uizard.io>
