@@ -3,7 +3,56 @@
 Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This helps educate the ordinary person to become experts over time in their knowledge of the wines of the world.
 ![Mockups](static/images/hw-devices.png)
 
+## UX
+
+Database Structure
+
+Database Schema
+
+Models
+
+## UX Design
+
+Overview
+
+Design
+
+Site User
+
+Goals for the website
+
+## Agile Development
+
+Agile Overview
+
+User stories
+
+1. [USER STORY: Install Django](https://github.com/firefox35/heavenly-wines/issues/1)
+2. [USER STORY: Add Apps and Templates](https://github.com/firefox35/heavenly-wines/issues/2)
+3. [USER STORY: Install Bootstrap](https://github.com/firefox35/heavenly-wines/issues/3)
+4. [USER STORY: Create Header and Footer](https://github.com/firefox35/heavenly-wines/issues/4) 
+5. [USER STORY: Create Account Registration](https://github.com/firefox35/heavenly-wines/issues/5)
+6. [USER STORY: Deploy App to Heroku](<https://github.com/firefox35/heavenly-wines/issues/6>)
+7. [USER STORY: Add Wine to Model](https://github.com/firefox35/heavenly-wines/issues/7)
+8. [USER STORY: README File Completed](https://github.com/firefox35/heavenly-wines/issues/8)
+9. [USER STORY: Add a list view of Wines](https://github.com/firefox35/heavenly-wines/issues/9)
+10. [USER STORY: Create a Detail view](https://github.com/firefox35/heavenly-wines/issues/10)
+11. [USER STORY: Create a Delete Function](https://github.com/firefox35/heavenly-wines/issues/11)
+12. [USER STORY: Edit Wine view](https://github.com/firefox35/heavenly-wines/issues/12)
+13. [USER STORY: Add a Search Function to Header](https://github.com/firefox35/heavenly-wines/issues/13)
+14. [USER STORY: Styling of the Website](https://github.com/firefox35/heavenly-wines/issues/14)
+
+
+
 # Features
+
+User Based Features Implemented
+
+Account Restrictions
+
+Website Features
+
+Future Implementation
 
 ## Site Wide
 
@@ -24,7 +73,6 @@ Footer
 
   ![Heavenly Wines](static/images/hw-footer.PNG)
   
-
 400 Error
 
 - Broken link to page.
@@ -32,48 +80,65 @@ Footer
 
   ![Error 400](static/images/)
 
+### Home Screen
+
+- Home Screen Image
+
+  - The user is shown with an introduction of electricity flowing through the screen needed to be Konnect to the game.
+
+- Home Screen Description
+
+  - The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
+
+    ![Home Screen](static/images/hw-homepage.PNG)
+
 ### About Screen
 
 - About Screen Image
 
-  - The user is shown with an introduction of electricity flowing through the screen needed to be Konnect to the game.
+  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
 
 - About Screen Description
 
-  - The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
+  - The user is displayed with the game as per the game rules shown in the about screen.
 
-    ![About Screen](static/images/)
+    ![About Screen](static/images/hw-homepage.PNG)
 
-### Main Screen
+## Wines Page
 
-- Home Screen Image
+- Wines Screen Image
 
   - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
 
-- Home Screen Description
+- Wines Screen Description
 
   - The user is displayed with the game as per the game rules shown in the about screen.
 
-    ![Home Screen](static/images/hw-homepage.PNG)
-
-
-
-## Home Page
-    ![Home Screen](static/images/hw-homepage.PNG)
-    
-## About Page
-    ![About Screen](static/images/hw-wines-page.PNG)
-    
-## Wines Page
-    ![Wines Screen](static/images/hw-wines-page.PNG)
+![Wines Screen](static/images/hw-wines-page.PNG)
 
 ## Comment Page
-    ![Wine Screen](static/images/hw-comment-page.PNG)
-    
-## Review Page
-    ![Wine Screen](static/images/hw-wines-page.PNG)
 
-    
+- Comment Screen Image
+
+  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
+
+- Comment Screen Description
+
+  - The user is displayed with the game as per the game rules shown in the about screen.
+![Comment Screen](static/images/hw-comment-page.PNG)
+
+## Review Page
+
+- Detail Screen Image
+
+  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
+
+- Detail Screen Description
+
+  - The user is displayed with the game as per the game rules shown in the about screen.
+  
+![Wine Details Screen](static/images/hw-wines-page.PNG)
+
 # Extra Features
 
 # Future Implementation
@@ -104,8 +169,6 @@ Wireframes - Balsamiq.com
 
   ![D Screen](static/images/)
 
-
-
 # Technologies
 
 HTML
@@ -122,7 +185,11 @@ JavaScript
 
 Python
 
--
+- Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+
+Django
+
+- Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
 Github
 
@@ -139,34 +206,46 @@ CodeAnyWhere
 
 Heroku
 
+- Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
 ElephantSQL
+
+- ElephantSQL is a PostgreSQL database hosting service.
+
+PostgresSQL
+
+- It is a highly stable database management system
 
 Balsamqi.com
 
-- This application was used to create mockups for the konnect website.
-- <https://app.uizard.io>
-- <https://app.uizard.io/prototypes/bMqxdZoEyxTYJrG9RKqP>
+- This application was used to create mockups for the Heavenly Wines website.
+  - <https://balsamiq.com/wireframe>
 
 Website Mockup Generator
 
-- This application was used to create images of the konnect website in desktop, laptop, tablet and mobile devices.
+- This application was used to create images of the Heavenly Wines website in desktop, laptop, tablet and mobile devices.
 - <https://websitemockupgenerator.com>
 
 Resize images
 
-- This application was used to resize images of the konnect website in desktop, laptop, tablet and mobile devices.
+- This application was used to resize images of the Heavenly website in desktop, laptop, tablet and mobile devices.
 - <https://www.resizepixel.com/>
 
 Navigation
 
 Home Screen
 
-- Submit Button : Once you fill out your first name and click the button it will bring you to the game screen.
+- Home Screen Buttons : They consist on the header the following 
+  - Home : The home button applies to all website pages to bring you to the home page.
+  - Wines : This view shown the reviewed wine card that can be clicked to show the detail of the wine.
+  - Comment : The user enters where they can add a review of a wine.
+  - Register : Sign up to become a member.
+  - Login : Enter User credentials
+  - Learn More : This brings you to the about page.
 
 Wines Screen
 
-- Home Button : Will bring you back to the Introduction Screen.
-- Play Again : Currently will bring you back to the Introduction Screen. (This is a work in progress due to time constraints).
+- The wine shown on the screen once clicked will brings you to the Description of the wine. where you can edit or delete.
 
 # Testing
 
@@ -217,6 +296,8 @@ Manual testing performed as expected and accessible.
 |  Detail Screen  |  wine_detail.html        |
 |  Delete Screen  |  wine_confirm_delete.html|
 |  Edit Screen    |  edit_wine.html          |
+|  About Screen   |  about.html              |
+
 
 #### Website Testing
 
@@ -226,52 +307,54 @@ Manual testing performed as expected and accessible.
 
 #### TEST 1 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| Store Name in Local Storage | 1. Display of Introduction Screen.           | To submit name into local storage | &check;|
-|                             | 2. Enter name in input field.                |                          |        |
-|                             | 3. The input field shows the name.           |                          |        |
-|                             | 4. Click Submit.                             |                          |        |
-|                             | 5. The user is redirected to the Screen.|                          |        |
-|                             | 6. The name is stored in local storage.      |                          |        |
+|          Description            |            Steps                       |Expected | Result  |
+|---------------------------------|----------------------------------------|---------|---------|
+| Navigation Links on Home Screen | 1. Wine Screen Button.                 | Passed  | &check; |
+|                                 | 2. Comment Screen Button.              | Passed  | &check; |
+|                                 | 3. Register Screen Button.             | Passed  | &check; |
+|                                 | 4. Login Screen.                       | Passed  | &check; |
+|                                 | 5. About Screen (Learn More) Button.   | Passed  | &check; |
+
 
 #### TEST 2 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| Navigate to Wines Screen    | 1. Displayed on Header of the Home Screen.   | Enter into Wines Screen  | &check;|
-|                             | 2. Click on the button called Wines.         |                          |        |
-|                             | 3. The user is redirected to the Wines Screen|                          |        |
-|                             | 4. The user can view each                    |                          |        |
-
+|          Description           |            Steps       |  Expected | Result  |
+|--------------------------------|------------------------|-----------|---------|
+| Navigate Links to Social Media.| 1. Facebook Link       | Passed    | &check; |
+|                                | 2. Instagram Link      | Passed    | &check; |
+|                                | 3. Twitter/ X  Link    | Passed    | &check; |
+|                                | 4. Youtube Link        | Passed    | &check; |
 
 #### TEST 3 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| User guess word submitted   | 1. In the Screen.                       | Word should display in Output Boxes. | &check;|
-|                             | 2. Enter guess word into the Input field.    |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-|                             | 4. Display's on Output Boxes.                |                          |        |
+|      Description   |       Steps        | Expected | Result  |
+|--------------------|--------------------|----------|---------|
+| Account Access     | 1. Register a user | Passed   | &check; |
+|                    | 2. Login a user    | Passed   | &check; |
+|                    | 3. Logout a user   | Passed   | &check; |
+
 
 #### TEST 4 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| User guess word clears when submitted | 1. In the Screen | Input field to become clear for next guess.| &check;|
-|                             | 2. Enter guess word into the Input field.    |                          |        |
-|                             | 3. Click Submit                              |                          |        |
-|                             | 4. Display's on Output boxes.                |                          |        |
-|                             | 5. Input field is empty                      |                          |        |
+|          Description        |            Steps         | Expected | Result |
+|-----------------------------|--------------------------|----------|--------|
+| Wine Comment Form Working   | 1. Add Wine              | Passed   | &check;|
+|                             | 2. Add Year              | Passed   | &check;|
+|                             | 3. Add Type of Wine      | Passed   | &check;|
+|                             | 4. Add Colour of Wine    | Passed   | &check;|
+|                             | 5. Add Country of Orgin  | Passed   | &check;|
+|                             | 6. Add Description       | Passed   | &check;|
+|                             | 7. Add Image             | Passed   | &check;|
+|                             | 8. Add Image Decription  | Passed   | &check;|
+|                             | 9. Click Add Wine Button | Passed   | &check;|
 
 #### TEST 5 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| The user is shown the result of the guess. | 1. In the  Screen. | Shows the result from the guess | &check;|
-|                             | 2. Enter guess word into Input field.        |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-|                             | 4. Display's the result from the Output Boxes.|                         |        |
+|          Description             |            Steps            | Expected | Result |
+|----------------------------------|-----------------------------|----------|--------|
+| The User can remove or edit post | 1. The user can delete post | Passed   | &check;|
+|                                  | 2. The user can edit post   | Passed   | &check;|
+
 
 #### TEST 6 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
@@ -351,11 +434,6 @@ Validation Testing
 
     ![Heavenly Wines Screens](assets/images/konnect-ccs-validation.PNG)
 
-- JAVASCRIPT
-
-  - script.js
-
-   ![Heavenly Wines Screens](assets/images/javascript-validation.PNG)
 
 Unfixed Bugs
 

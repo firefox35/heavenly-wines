@@ -33,3 +33,4 @@ class WineForm(forms.ModelForm):
             "image": "Wine Image",
             "image_alt": "Describe Image",
         }
+
