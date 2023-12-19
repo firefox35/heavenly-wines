@@ -6,7 +6,7 @@ from .models import Wine
 
 @admin.register(Wine)
 class WineAdmin(admin.ModelAdmin):
-    list_displayed = ("title", "slug", "type_of_wine", "description", "image")
+    list_displayed = ("title", "type_of_wine", "description", "image")
     list_filter = (
         "year",
         "colour",

@@ -48,7 +48,6 @@ class Wine(models.Model):
     user = models.ForeignKey(
         User, related_name="wine_owner", on_delete=models.CASCADE)
     title = models.CharField(max_length=300, null=False, blank=False)
-    slug = models.SlugField(max_length=200, unique=True)
     year = models.IntegerField(
         _("year"), choices=YEAR_CHOICES, default=datetime.datetime.now().year
     )
