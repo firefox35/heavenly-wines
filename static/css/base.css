@@ -61,7 +61,7 @@ footer {
 
 /**Background images**/
 .bg-image {
-    background: no-repeat center center fixed;
+    background: no-repeat fixed;
     min-height: 100%;
     -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -69,51 +69,6 @@ footer {
         background-size: cover;
 }
 
-.bg-image2 {
-    background: url("/static/images/avaline.jpg") no-repeat;
-    min-height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-.bg-image3 {
-    background: url("/static/images/glasses.webp")no-repeat;
-    min-height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-.bg-image4 {
-    background: url("/static/images/glasses.webp")no-repeat;
-    min-height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-.bg-image5 {
-    background: url("/static/images/museum.jpg")no-repeat;
-    min-height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-
-.bg-image6 {
-    background: url("/static/images/tuscany.jpg")no-repeat;
-    min-height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 
 /* Header */

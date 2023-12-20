@@ -3,7 +3,8 @@
 {% block title %} Wine Detail- {{recipe.title}} {% endblock %}
 
 {% block content %}
-    <div class="bg-image5 p-5 text-center shadow-1-strong rounded mb-5 text-red">
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-red" 
+    style="background-image: url('https://res.cloudinary.com/dhz8l5b2j/image/upload/v1703023892/static/images/museum.1525e4b614fb.jpg');">
         <div class="wine-info mt-3 p-1">
             <div class="wine-img">
                 <img src="{{wine.image.url }}" alt="{{ wine.image_alt }}" class="wine-pic">

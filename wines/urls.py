@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, about, AddWine, Wines, WineDetail, DeleteWine, EditWine
+from .views import index, about, AddWine, Wines, WineDetail, DeleteWine,EditWine
 from . import views
 
 urlpatterns = [

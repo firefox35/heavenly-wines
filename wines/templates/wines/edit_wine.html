@@ -3,7 +3,8 @@
 {% block title %}Edit Wine{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-red" 
+    style="background-image: url('https://res.cloudinary.com/dhz8l5b2j/image/upload/v1703023892/static/images/museum.1525e4b614fb.jpg');">
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
         <h1 class="text-center">Edit Wine</h1>
         {% csrf_token %}

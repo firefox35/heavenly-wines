@@ -84,11 +84,11 @@ Footer
 
 - Home Screen Image
 
-  - The user is shown with an introduction of electricity flowing through the screen needed to be Konnect to the game.
+  - The user is shown with an introduction of a view of the countryside with food, a bottle and two glasses of wine. 
 
 - Home Screen Description
 
-  - The user is shown a screen with general rules of the game and where to enter the person and submit to enter the game.
+  - The user is shown a screen with a brief description of the website with different links on the header and footer to other screens.
 
     ![Home Screen](static/images/hw-homepage.PNG)
 
@@ -96,11 +96,11 @@ Footer
 
 - About Screen Image
 
-  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
+  - The user is shown with an image of a 
 
 - About Screen Description
 
-  - The user is displayed with the game as per the game rules shown in the about screen.
+  - The user is displayed with the 
 
     ![About Screen](static/images/hw-homepage.PNG)
 

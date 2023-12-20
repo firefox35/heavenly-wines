@@ -35,8 +35,8 @@ class Wines(ListView):
         if query:
             wines = self.model.objects.filter(
                 Q(title__icontains=query) |
-                Q(description__icontains=query) 
-            )  
+                Q(description__icontains=query)
+            )
         else:
             wines = self.model.objects.all()
         return wines
