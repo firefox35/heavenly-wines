@@ -138,7 +138,7 @@ Footer
 
   - The user is displayed with the a full description of the wine and an image.
   
-![Wine Details Screen](static/images/hw-wines-page.PNG)
+![Wine Details Screen](static/images/hw-wine-details.PNG)
 
 ## Extra Features
 
@@ -290,6 +290,8 @@ Manual testing performed as expected and accessible.
 
 ## Lighthouse Testing
 
+![Lighthouse Result](static/images/hw-lighthouse.PNG)
+
 ### Functional Testing
 
 #### Navigation Links
@@ -377,45 +379,6 @@ Manual testing performed as expected and accessible.
 | Details of the Wine | 1. The user can click the wine bottle to view the details from the wines screen.| Passed   | &check;|
 
 
-#### TEST 8 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
-
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| . | 1. In the Screen.        |Rejects the integer value.| &check;|
-|                             | 2. Enter numbers into the Input Field.       |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-
-#### TEST 9 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
-
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| The display outputs the correct result. | 1  In the  Screen.  | Display the correct result of the winner | &check;|
-|                             | 2. Enter guess word in the Input field.      |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-|                             | 4. Repeat Process till the right answer.     |                          |        |
-
-#### TEST 10 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
-
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| Input field can only input a string value | 1. In the Game Screen.         | Rejects the integer value | &check;|
-|                             | 2. Enter numbers into the Input Field.       |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-
-#### TEST 11 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
-
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| Home Button on  Screen  | 1. In the  Screen.                 | Return to Introduction Screen. | &check;|
-|                             | 2. Click on Home Button.                     |                          |        |
-
-#### TEST 12 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
-
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| Play Again Button on Screen | 1. In the  Screen.                  |Restart the game again    | &cross;|
-|                             | 2. Click on the Play Again Button.           |                          |        |
-
 ## Header Icons/Links
 
 Validation Testing
@@ -424,13 +387,13 @@ Validation Testing
 
   - index.html
 
-    ![Heavenly Wines Screens](assets/images/HTML-Validation.PNG)
+    ![Heavenly Wines Screens](static/images/HTML-Validation.PNG)
 
 - CSS
 
   - bass.css
 
-    ![Heavenly Wines Screens](static/images/hw-ccs-validation.PNG)
+    ![Heavenly Wines Screens](static/images/hw-css-validation.PNG)
 
 - Unfixed Bugs
 
