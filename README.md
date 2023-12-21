@@ -358,32 +358,22 @@ Manual testing performed as expected and accessible.
 
 #### TEST 6 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| The results shows the right color scheme | 1. In the Screen.| Display the color scheme in the output boxes.| &check;|
-|                             | 2. Enter guess word in the Input field.      |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-|                             | 4. A result is displayed on the Output Boxes.|                          |        |
-|                             | 5. Result shows colors of the user guess.    |                          |        |
+|   Description   |              Steps                  | Expected | Result |
+|-----------------|-------------------------------------|----------|--------|
+| The Search Bar  | 1. The user can use the search bar  | Passed   | &check;|
 
 #### TEST 7 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
-|          Description        |            Steps                             |          Expected        | Result |
-|-----------------------------|----------------------------------------------|--------------------------|--------|
-| Random word remains static during guessing the right answer | 1. In the  Screen.| The random word stays static during the game| &check;|
-|                             | 2. Enter guess word into the input field.    |                          |        |
-|                             | 3. Click Submit.                             |                          |        |
-|                             | 4. A result displayed on the output boxes.   |                          |        |
-|                             | 5. Enter your next guess.                    |                          |        |
-|                             | 6. Click Submit.                             |                          |        |
-|                             | 7. Display the same random word again.       |                          |        |
-|                             | 8. Process is done a number of times till the user guesses the right word.|      |        |
+|   Description       |            Steps                                                                | Expected | Result |
+|---------------------|---------------------------------------------------------------------------------|----------|--------|
+| Details of the Wine | 1. The user can click the wine bottle to view the details from the wines screen.| Passed   | &check;|
+
 
 #### TEST 8 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
 |          Description        |            Steps                             |          Expected        | Result |
 |-----------------------------|----------------------------------------------|--------------------------|--------|
-| Input field can only input a string value. | 1. In the Screen.        |Rejects the integer value.| &check;|
+| . | 1. In the Screen.        |Rejects the integer value.| &check;|
 |                             | 2. Enter numbers into the Input Field.       |                          |        |
 |                             | 3. Click Submit.                             |                          |        |
 
@@ -434,10 +424,10 @@ Validation Testing
 
     ![Heavenly Wines Screens](assets/images/konnect-ccs-validation.PNG)
 
+- Unfixed Bugs
 
-Unfixed Bugs
+  - Responsiveness of the website worked on all devices and screen sizes
 
-- Responsiveness of the website worked on all devices and screen sizes
 
 # Deployment
 
