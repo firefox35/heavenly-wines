@@ -13,7 +13,7 @@ Database Schema
 Models
 
 - Wine Model
-  ![Heavenly Wines Model](static/images/wine-model.png)
+![Heavenly Wines Model](static/images/wine-model.png)
 
 ## UX Design
 
@@ -290,7 +290,7 @@ Responsiveness was tested on screen sizes from 320px on Chrome, Edge, Firefox an
 
 Steps to test:
 
-1. Open browser and navigate to [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+1. Open browser and navigate to [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 2. Open the developer tools (right click and inspect)
 3. Set to responsive and decrease width to 320px
 4. Set the zoom to 50%
@@ -347,7 +347,7 @@ Manual testing performed as expected and accessible.
 
 -The following test scenarios were covered.
 
-#### TEST 1 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 1 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |          Description            |            Steps                       |Expected | Result  |
 |---------------------------------|----------------------------------------|---------|---------|
@@ -357,7 +357,7 @@ Manual testing performed as expected and accessible.
 |                                 | 4. Login Screen.                       | Passed  | &check; |
 |                                 | 5. About Screen (Learn More) Button.   | Passed  | &check; |
 
-#### TEST 2 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 2 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |          Description           |            Steps       |  Expected | Result  |
 |--------------------------------|------------------------|-----------|---------|
@@ -366,7 +366,7 @@ Manual testing performed as expected and accessible.
 |                                | 3. Twitter/ X  Link    | Passed    | &check; |
 |                                | 4. Youtube Link        | Passed    | &check; |
 
-#### TEST 3 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 3 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |      Description   |       Steps        | Expected | Result  |
 |--------------------|--------------------|----------|---------|
@@ -374,7 +374,7 @@ Manual testing performed as expected and accessible.
 |                    | 2. Login a user    | Passed   | &check; |
 |                    | 3. Logout a user   | Passed   | &check; |
 
-#### TEST 4 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 4 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |          Description        |            Steps         | Expected | Result |
 |-----------------------------|--------------------------|----------|--------|
@@ -388,20 +388,20 @@ Manual testing performed as expected and accessible.
 |                             | 8. Add Image Decription  | Passed   | &check;|
 |                             | 9. Click Add Wine Button | Passed   | &check;|
 
-#### TEST 5 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 5 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |          Description             |            Steps            | Expected | Result |
 |----------------------------------|-----------------------------|----------|--------|
 | The User can remove or edit post | 1. The user can delete post | Passed   | &check;|
 |                                  | 2. The user can edit post   | Passed   | &check;|
 
-#### TEST 6 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 6 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |   Description   |              Steps                  | Expected | Result |
 |-----------------|-------------------------------------|----------|--------|
 | The Search Bar  | 1. The user can use the search bar  | Passed   | &check;|
 
-#### TEST 7 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
+#### TEST 7 - [Heavenly Wines](https://firefox35.github.com/heavenly-wines/)
 
 |   Description       |            Steps                                                                | Expected | Result |
 |---------------------|---------------------------------------------------------------------------------|----------|--------|
@@ -413,7 +413,7 @@ Validation Testing
 
   - index.html
 
-    ![Heavenly Wines Screens](static/images/HTML-Validation.PNG)
+    ![Heavenly Wines Screens](static/images/html-validation.PNG)
 
 - CSS
 
@@ -451,7 +451,7 @@ Validation Testing
 
 To deploy the Heroku:
 
-- Sign up / Log in to Heroku
+- Sign up / Log in to Heroku -
 - From the main Heroku Dashboard page select New.
 - Click on Create New App.
 - I gave my project a Heavenly Wines.
@@ -504,7 +504,7 @@ git commit -m "Commit Message"
 
 git push
 
-The live link can be found here - <https://firefox35.github.io/heavenly-wines/>
+The live link can be found here - <https://firefox35.github.com/heavenly-wines/>
 
 Clone the Repository Code Locally
 
@@ -514,7 +514,7 @@ From the menu on left select 'Pages'
 From the source section drop-down menu, select the Branch: main
 Click 'Save'
 A live link will be displayed in a green banner when published successfully.
-The live link can be found here - <https://firefox35.github.io/heavenly-wines/>
+The live link can be found here - <https://firefox35.github.com/heavenly-wines/>
 
 ## Credits
 

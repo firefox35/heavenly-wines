@@ -8,11 +8,11 @@ from django.db.models import Q
 from .models import Wine
 from .forms import WineForm
 
-
+"""View home screen"""
 class index(TemplateView):
     template_name = "wines/index.html"
 
-
+"""View about list"""
 class about(ListView):
     template_name = "wines/about.html"
     model = Wine
@@ -21,9 +21,8 @@ class about(ListView):
     def get_queryset(self):
         return self.model.objects.all()[:3]
 
-
+"""View all wines"""
 class Wines(ListView):
-    """View all wines"""
     template_name = "wines/wines.html"
     model = Wine
     context_object_name = "wines"
@@ -41,16 +40,14 @@ class Wines(ListView):
             wines = self.model.objects.all()
         return wines
 
-
+"""Add a wine view"""
 class WineDetail(DetailView):
-    """Add a wine view"""
     template_name = "wines/wine_detail.html"
     model = Wine
     context_object_name = "wine"
 
-
+"""Add wine review"""
 class AddWine(LoginRequiredMixin, CreateView):
-    """Add wine review"""
     template_name = "wines/add_wine.html"
     model = Wine
     context_object_name = "wines"

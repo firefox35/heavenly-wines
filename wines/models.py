@@ -8,7 +8,7 @@ import datetime
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-
+"""A model to create and manage wines"""
 class Wine(models.Model):
     YEAR_CHOICES = []
     for r in range(1940, (datetime.datetime.now().year + 1)):
@@ -42,9 +42,7 @@ class Wine(models.Model):
         ("portugal", "Portugal"),
     )
 
-    """
-    A model to create and manage wines
-    """
+    """A model to create and manage wines"""
     user = models.ForeignKey(
         User, related_name="wine_owner", on_delete=models.CASCADE)
     title = models.CharField(max_length=300, null=False, blank=False)
