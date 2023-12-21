@@ -12,6 +12,9 @@ Database Schema
 
 Models
 
+- Wine Model
+  ![Heavenly Wines Model](static/images/wine-model.png)
+
 ## UX Design
 
 Overview
@@ -190,7 +193,7 @@ Wireframes - Balsamiq.com
 
 - Add Wine Screen
 
-  ![Add Wine Screen](static/images/hw-wines-mockup.PNG)
+  ![Add Wine Screen](static/images/hw-add-wine-mockup.PNG)
 
 - Detail Screen
 
@@ -238,7 +241,8 @@ Heroku
 ElephantSQL
 
 - ElephantSQL is a PostgreSQL database hosting service.
-
+  - <https://api.elephantsql.com/>
+  
 Bootstrap 5
 
 - Its used to style the frontend framework with Django
@@ -313,10 +317,12 @@ Manual testing performed as expected and accessible.
 
 ## Lighthouse Testing
 
--index.html
+- index.html
+
 ![Lighthouse Result](static/images/hw-lighthouse.PNG)
 
--wines.html
+- wines.html
+  
 ![Lighthouse Result](static/images/hw-lighthouse-wines.PNG)
 
 ### Functional Testing
