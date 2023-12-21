@@ -1,6 +1,6 @@
 # Heavenly Wines
 
-Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This helps educate the ordinary person to become experts over time in their knowledge of the wines of the world.
+Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This help's educate a normal person to become experts over time in their knowledge of the wines in the world.
 ![Mockups](static/images/hw-devices.png)
 
 ## UX
@@ -18,20 +18,34 @@ Overview
 
 Design
 
+- The design is to make it easy for the user to navigate.
+- Simplify the website to be user friendly.
+
 Site User
 
+- An expert or a beginner.
+
 Goals for the website
+
+- Is to educate and gain knowlege on different wines.
+- To give and gain experience of the type of wines to buy.
+- Meet new people along the way.
 
 ## Agile Development
 
 Agile Overview
 
+The project is created along side the GITHUB repository to create milestone and issues that are A MUST HAVE in the projects. To keep track of what needs to be implemented within the project, a bit like building blocks along the way with different elements required to have a fully working website.
+![User Stories](https://github.com/users/firefox35/projects/16/views/1)
+
 User stories
+
+A User Story is a piece of functionality the needs to be installed along the way to produce a working website.
 
 1. [USER STORY: Install Django](https://github.com/firefox35/heavenly-wines/issues/1)
 2. [USER STORY: Add Apps and Templates](https://github.com/firefox35/heavenly-wines/issues/2)
 3. [USER STORY: Install Bootstrap](https://github.com/firefox35/heavenly-wines/issues/3)
-4. [USER STORY: Create Header and Footer](https://github.com/firefox35/heavenly-wines/issues/4) 
+4. [USER STORY: Create Header and Footer](https://github.com/firefox35/heavenly-wines/issues/4)
 5. [USER STORY: Create Account Registration](https://github.com/firefox35/heavenly-wines/issues/5)
 6. [USER STORY: Deploy App to Heroku](<https://github.com/firefox35/heavenly-wines/issues/6>)
 7. [USER STORY: Add Wine to Model](https://github.com/firefox35/heavenly-wines/issues/7)
@@ -43,17 +57,25 @@ User stories
 13. [USER STORY: Add a Search Function to Header](https://github.com/firefox35/heavenly-wines/issues/13)
 14. [USER STORY: Styling of the Website](https://github.com/firefox35/heavenly-wines/issues/14)
 
-
-
 # Features
 
 User Based Features Implemented
 
+- A user can create an Account.
+- A user can add a wine.
+- A user can delete a wine.
+- A user can edit a wine.
+- A user can read the details of the wine.
+- A user can delte its account.
+- A user can view each screen as a member.
+
 Account Restrictions
 
-Website Features
+- To access the wine list you have to register an account.
+- To access the wine details you have to register an account.
+- To access the site you must login with username and password.
 
-Future Implementation
+Website Features
 
 ## Site Wide
 
@@ -85,7 +107,7 @@ Footer
 
 - Home Screen Image
 
-  - The user is shown with an introduction of a view of the countryside with food, a bottle and two glasses of wine. 
+  - The user is shown with an introduction of a view of the countryside with food, a bottle and two glasses of wine.
 
 - Home Screen Description
 
@@ -145,11 +167,10 @@ Footer
 - Search Function on the header.
 - Social Media Links on the footer.
 
-
 ## Future Implementation
 
--To incorporate a feature where you can purchaes the wines on the site with a link to payment method.
-
+- To incorporate a feature where you can purchaes the wines on the site with a link to payment method.
+- Plan to do automated testing.
 
 ## Design
 
@@ -174,8 +195,6 @@ Wireframes - Balsamiq.com
 - Detail Screen
 
   ![Detail Screen](static/images/hw-detail-mockup.PNG)
-
-  
 
 ## Technologies
 
@@ -220,6 +239,10 @@ ElephantSQL
 
 - ElephantSQL is a PostgreSQL database hosting service.
 
+Bootstrap 5
+
+- Its used to style the frontend framework with Django
+
 PostgresSQL
 
 - It is a highly stable database management system
@@ -243,7 +266,7 @@ Navigation
 
 Home Screen
 
-- Home Screen Buttons : They consist on the header the following 
+- Home Screen Buttons : They consist on the header the following
   - Home : The home button applies to all website pages to bring you to the home page.
   - Wines : This view shown the reviewed wine card that can be clicked to show the detail of the wine.
   - Comment : The user enters where they can add a review of a wine.
@@ -290,7 +313,11 @@ Manual testing performed as expected and accessible.
 
 ## Lighthouse Testing
 
+-index.html
 ![Lighthouse Result](static/images/hw-lighthouse.PNG)
+
+-wines.html
+![Lighthouse Result](static/images/hw-lighthouse-wines.PNG)
 
 ### Functional Testing
 
@@ -308,7 +335,6 @@ Manual testing performed as expected and accessible.
 |  Edit Screen    |  edit_wine.html          |
 |  About Screen   |  about.html              |
 
-
 #### Website Testing
 
 -The website was tested to ensure its functionality was correctly working.
@@ -324,7 +350,6 @@ Manual testing performed as expected and accessible.
 |                                 | 3. Register Screen Button.             | Passed  | &check; |
 |                                 | 4. Login Screen.                       | Passed  | &check; |
 |                                 | 5. About Screen (Learn More) Button.   | Passed  | &check; |
-
 
 #### TEST 2 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
@@ -342,7 +367,6 @@ Manual testing performed as expected and accessible.
 | Account Access     | 1. Register a user | Passed   | &check; |
 |                    | 2. Login a user    | Passed   | &check; |
 |                    | 3. Logout a user   | Passed   | &check; |
-
 
 #### TEST 4 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
@@ -365,7 +389,6 @@ Manual testing performed as expected and accessible.
 | The User can remove or edit post | 1. The user can delete post | Passed   | &check;|
 |                                  | 2. The user can edit post   | Passed   | &check;|
 
-
 #### TEST 6 - [Heavenly Wines](https://firefox35.github.io/heavenly-wines/)
 
 |   Description   |              Steps                  | Expected | Result |
@@ -377,9 +400,6 @@ Manual testing performed as expected and accessible.
 |   Description       |            Steps                                                                | Expected | Result |
 |---------------------|---------------------------------------------------------------------------------|----------|--------|
 | Details of the Wine | 1. The user can click the wine bottle to view the details from the wines screen.| Passed   | &check;|
-
-
-## Header Icons/Links
 
 Validation Testing
 
@@ -399,8 +419,96 @@ Validation Testing
 
   - Responsiveness of the website worked on all devices and screen sizes
 
+## Header & Footer Icons/Links
+
+- Logo Image
+
+  - <https://www.vectorstock.com/royalty-free-vector/two-glasses-of-red-wine-clink-vector-8647663>
+
+- Facebook Link
+  
+  - <https://www.facebook.com/>
+  
+- Instagram Link
+  
+  - <https://www.instagram.com/>
+  
+- X Link
+  
+  - <https://twitter.com/>
+
+- Youtube Link
+
+  - <https://www.youtube.com/>
 
 # Deployment
+
+To deploy the Heroku:
+
+- Sign up / Log in to Heroku
+- From the main Heroku Dashboard page select New.
+- Click on Create New App.
+- I gave my project a Heavenly Wines.
+- Select E.U as the region.
+- Click Create app.
+- It must be a vaild name of the your app.
+- Heroku will create the app.
+- It take you to the deploy tab.
+- At Deployment Method.
+- Click on Github
+- At App connected to Github
+- Click to search and connect to your repository.
+- In the Sttings tab.
+- Click on the Config Vars- Reveal Config Vars
+- In it add the following config vars
+ -CLOUDINARY_URL
+ -DATABAE_URL
+ -HEROKU_HOSTNAME
+ -SECRET_KEY
+-paste in the value to each
+
+- In Django create a new file called env.py
+- os.environ["DATABASE_URL"]= "Paste the link in here"
+- os.environ["SECRET_KEY"] = "your secret key goes here"
+- os.environ["CLOUDINARY_URL"] = "paste in the Url copied to the clipboard here"
+- In the settings.py file
+- Add the following
+- import Path from pathlib, import os and import dj_database_url
+   os.path.isfile("env.py"): import env
+- Add the cloudinary libraries to the list of installed apps in order of important. 
+-'Cloudinary_storage' goes above 'django.contrib.staticfiles' and 'cloudinary' goes below it.
+- Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+- Change the templates directory to TEMPLATES_DIR - 'DIRS': [TEMPLATES_DIR]
+- Add Heroku to the ALLOWED_HOSTS list.
+- Create Procfile and add the following code - web: guincorn PROJECT_NAME.wsgi
+- To the deploy in Heroku go to the Deploy tab and deploy the branch manually.
+- Once it has completed the build process it should successfully deploy to view the site live
+
+Version Control
+
+Deployment of Live Version from Github
+
+The website was created using CodeAnyWhere editor and the code was pushed to a repository in GitHub called Heavenly Wines.
+
+I used the following GitHub commands to push the code to the repository, every time a chance is made to the code. This is what they called version control. Its basically a backup version of your code if anything goes wrong.
+
+git add - This command is basically saving your code
+
+git commit -m "Commit Message"
+
+git push
+
+The live link can be found here - <https://firefox35.github.io/heavenly-wines/>
+
+Clone the Repository Code Locally
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the menu on left select 'Pages'
+From the source section drop-down menu, select the Branch: main
+Click 'Save'
+A live link will be displayed in a green banner when published successfully.
+The live link can be found here - <https://firefox35.github.io/heavenly-wines/>
 
 ## Credits
 
