@@ -8,6 +8,7 @@ Heavenly Wines is a wine club where we select three different types of wines eac
 Database Structure
 
 Database Schema
+![Heavenly Wines Database](static/images/hw-database-diagram.png)
 
 Models
 
@@ -76,9 +77,9 @@ Footer
 400 Error
 
 - Broken link to page.
-- Error due favicon not working.
+- Error was due to a forward slash on a image links.
 
-  ![Error 400](static/images/)
+  ![Error 400](static/images/bad-err.PNG)
 
 ### Home Screen
 
@@ -90,60 +91,67 @@ Footer
 
   - The user is shown a screen with a brief description of the website with different links on the header and footer to other screens.
 
-    ![Home Screen](static/images/hw-homepage.PNG)
+    ![Home Screen](static/images/hw-home.PNG)
 
 ### About Screen
 
 - About Screen Image
 
-  - The user is shown with an image of a 
+  - The user is shown with an image of wine region in the background.
 
 - About Screen Description
 
-  - The user is displayed with the 
+  - The user is shown as title and description of the website with a bottle of wine with the form.The bottle can be click to lead to the description of the wine.
 
-    ![About Screen](static/images/hw-homepage.PNG)
+    ![About Screen](static/images/hw-about.PNG)
 
 ## Wines Page
 
 - Wines Screen Image
 
-  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
+  - The user is shown with an image with a red bricked wall with a window and four glasses of wine on a table.
 
 - Wines Screen Description
 
-  - The user is displayed with the game as per the game rules shown in the about screen.
+  - The user is shown with a bottle of wine with a description below on card that's happen when you submit the form to add a wine.
 
-![Wines Screen](static/images/hw-wines-page.PNG)
+![Wines Screen](static/images/hw-wines.PNG)
 
-## Comment Page
+## Add Wine Page
 
-- Comment Screen Image
+- Add Wine Screen Image
 
-  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
+  - The user is shown with an image of a pink bottle of wine and a glass on the table with a silhouette that given tranquil setting.
 
-- Comment Screen Description
+- Add Wine Screen Description
 
-  - The user is displayed with the game as per the game rules shown in the about screen.
-![Comment Screen](static/images/hw-comment-page.PNG)
+  - The user is displayed with a form to enter a wine on the screen and submit the information.
+![Add Wine Screen](static/images/hw-add-wine.PNG)
 
-## Review Page
+## Wine Details Page
 
-- Detail Screen Image
+- Wine Detail Screen Image
 
-  - The user is shown with an image of a electrician coming to Konnect to the game as the electricity flows through the game.
+  - The user is shown with an image a marble background.
 
-- Detail Screen Description
+- Wine Detail Screen Description
 
-  - The user is displayed with the game as per the game rules shown in the about screen.
+  - The user is displayed with the a full description of the wine and an image.
   
 ![Wine Details Screen](static/images/hw-wines-page.PNG)
 
-# Extra Features
+## Extra Features
 
-# Future Implementation
+- Search Function on the header.
+- Social Media Links on the footer.
 
-# Design
+
+## Future Implementation
+
+-To incorporate a feature where you can purchaes the wines on the site with a link to payment method.
+
+
+## Design
 
 Wireframes - Balsamiq.com
 
@@ -157,19 +165,19 @@ Wireframes - Balsamiq.com
 
 - Wines Screen
 
-  ![Wines Screen](static/images/)
+  ![Wines Screen](static/images/hw-wines-mockup.PNG)
 
-  Comment Screen
+- Add Wine Screen
 
-  ![Comment Screen](static/images/hw-wine-reviews-mockup.PNG)
+  ![Add Wine Screen](static/images/hw-wines-mockup.PNG)
 
-  Detail Screen
+- Detail Screen
 
   ![Detail Screen](static/images/hw-detail-mockup.PNG)
 
-  ![D Screen](static/images/)
+  
 
-# Technologies
+## Technologies
 
 HTML
 
@@ -422,7 +430,7 @@ Validation Testing
 
   - bass.css
 
-    ![Heavenly Wines Screens](assets/images/konnect-ccs-validation.PNG)
+    ![Heavenly Wines Screens](static/images/hw-ccs-validation.PNG)
 
 - Unfixed Bugs
 
