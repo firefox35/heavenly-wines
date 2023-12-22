@@ -525,9 +525,9 @@ Click 'Save'
 A live link will be displayed in a green banner when published successfully.
 The live link can be found here - <https://firefox35.github.com/heavenly-wines/>
 
-## Credits
+# Credits
 
-# Websites
+## Websites
 
 Forbidden 403 | CSRF verification failed Request aborted | window 11 | 2022 updated | Django error
 
@@ -609,7 +609,7 @@ How can I deal with this Git warning? "Pulling without specifying how to reconci
 
 - <https://stackoverflow.com/questions/62653114/how-can-i-deal-with-this-git-warning-pulling-without-specifying-how-to-reconci>
 
-# Video’s
+## Video’s
 
 Django : You have 3 unapplied migration(s). Your project may not work properly until you apply
 

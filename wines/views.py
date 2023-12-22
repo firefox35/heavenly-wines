@@ -8,11 +8,17 @@ from django.db.models import Q
 from .models import Wine
 from .forms import WineForm
 
+
 """View home screen"""
+
+
 class index(TemplateView):
     template_name = "wines/index.html"
 
+
 """View about list"""
+
+
 class about(ListView):
     template_name = "wines/about.html"
     model = Wine
@@ -21,7 +27,10 @@ class about(ListView):
     def get_queryset(self):
         return self.model.objects.all()[:3]
 
+
 """View all wines"""
+
+
 class Wines(ListView):
     template_name = "wines/wines.html"
     model = Wine
@@ -40,13 +49,19 @@ class Wines(ListView):
             wines = self.model.objects.all()
         return wines
 
+
 """Add a wine view"""
+
+
 class WineDetail(DetailView):
     template_name = "wines/wine_detail.html"
     model = Wine
     context_object_name = "wine"
 
+
 """Add wine review"""
+
+
 class AddWine(LoginRequiredMixin, CreateView):
     template_name = "wines/add_wine.html"
     model = Wine
@@ -59,8 +74,10 @@ class AddWine(LoginRequiredMixin, CreateView):
         return super(AddWine, self).form_valid(form)
 
 
+"""Delete wine review"""
+
+
 class DeleteWine(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    """Delete wine review"""
     model = Wine
     success_url = '/wines/'
 
@@ -68,8 +85,10 @@ class DeleteWine(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return self.request.user == self.get_object().user
 
 
+"""Edit wine review"""
+
+
 class EditWine(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    """Edit wine review"""
     template_name = "wines/edit_wine.html"
     model = Wine
     form_class = WineForm

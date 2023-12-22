@@ -9,6 +9,8 @@ import datetime
 STATUS = ((0, "Draft"), (1, "Published"))
 
 """A model to create and manage wines"""
+
+
 class Wine(models.Model):
     YEAR_CHOICES = []
     for r in range(1940, (datetime.datetime.now().year + 1)):
