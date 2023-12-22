@@ -54,8 +54,7 @@ ALLOWED_HOSTS = ['8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com',
                  'heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com']
 
 
-CSRF_TRUSTED_ORIGINS =
-['https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
+CSRF_TRUSTED_ORIGINS = ['https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com',
  'https://8000-firefox35-heavenly-wines-pwlbonxqsb.us2.codeanyapp.com']
 
 # Application definition
