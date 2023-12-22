@@ -1,11 +1,14 @@
 # Heavenly Wines
 
 Heavenly Wines is a wine club where we select three different types of wines each week to be reviewed on the website and leave comments, so you can enjoy this experience from your home. This help's educate a normal person to become experts over time in their knowledge of the wines in the world.
+
+This link is the live version of Heavenly Wines (https://heavenly-wines-blog-da6c1e3dc8d4.herokuapp.com)
+
 ![Mockups](static/images/hw-devices.png)
 
-## UX
+# UX
 
-# Database Structure
+## Database Structure
 
 - Database Schema
 
@@ -42,7 +45,7 @@ Agile Overview
 
 The project is created along side the GITHUB repository to create milestone and issues that are A MUST HAVE in the projects. To keep track of what needs to be implemented within the project, a bit like building blocks along the way with different elements required to have a fully working website.
 
-![User Stories](https://github.com/users/firefox35/projects/16/views/1)
+[User Stories](https://github.com/users/firefox35/projects/16)
 
 User stories
 
@@ -83,6 +86,9 @@ Account Restrictions
 
 Website Features
 
+- Search bar
+  
+  
 ## Site Wide
 
 Header
