@@ -5,15 +5,17 @@ Heavenly Wines is a wine club where we select three different types of wines eac
 
 ## UX
 
-Database Structure
+# Database Structure
 
-Database Schema
+- Database Schema
+
 ![Heavenly Wines Database](static/images/hw-database-diagram.png)
 
-Models
+Model
 
 - Wine Model
-![Heavenly Wines Model](static/images/wine-model.png)
+  
+![Heavenly Wines Model](static/images/wine-model.PNG)
 
 ## UX Design
 
@@ -39,6 +41,7 @@ Goals for the website
 Agile Overview
 
 The project is created along side the GITHUB repository to create milestone and issues that are A MUST HAVE in the projects. To keep track of what needs to be implemented within the project, a bit like building blocks along the way with different elements required to have a fully working website.
+
 ![User Stories](https://github.com/users/firefox35/projects/16/views/1)
 
 User stories
