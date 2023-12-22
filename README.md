@@ -45,9 +45,9 @@ Agile Overview
 
 The project is created along side the GITHUB repository to create milestone and issues that are A MUST HAVE in the projects. To keep track of what needs to be implemented within the project, a bit like building blocks along the way with different elements required to have a fully working website.
 
-[User Stories](https://github.com/users/firefox35/projects/16)
+This is the link to the User Stories - (https://github.com/users/firefox35/projects/16)
 
-User stories
+User Stories
 
 A User Story is a piece of functionality the needs to be installed along the way to produce a working website.
 
@@ -622,4 +622,15 @@ Python Django Multiple HTML Pages Configure Routing (urls.py)
 Django Lesson 6: Advanced URL Patterns
 
 - <https://www.youtube.com/watch?v=JJNtrbodjkg>
+
+How to make a website with Python and Django - BUILD A CONTACT PAGE WITH DJANGO FORMS 
+
+- <https://www.youtube.com/watch?v=94ylwr2r3Hs>
   
+How to make a website with Python and Django - BASICS 
+
+- <https://www.youtube.com/watch?v=rA4X73E_HV0>
+
+Building a Python website for Beginners using Django Framework | Coffee Shop Django web App
+
+- https://www.youtube.com/watch?v=aXrGC-s2gok
